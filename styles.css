@@ -9,4 +9,82 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+}
+
+.container {
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-color: white;
+  border: solid 2px white;
+  border-radius: 10px;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  margin: 40% auto 50% auto;
+  display: grid;
+  grid-template-areas: "title" "first" "second" "third" "fourth" "fifth";
+  padding: 5% 10% 5% 0;
+}
+
+.desktop-image {
+  grid-area: image;
+}
+
+.desktop-image img {
+  width: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.title {
+  grid-area: title;
+  padding-left: 5%;
+  margin: 5%;
+}
+
+#first-question {
+  grid-area: first;
+  padding-left: 5%;
+  margin: 3%;
+}
+
+#second-question {
+  grid-area: second;
+  padding-left: 5%;
+  margin: 3%;
+}
+
+#third-question {
+  grid-area: third;
+  padding-left: 5%;
+  margin: 3%;
+}
+
+#fourth-question {
+  grid-area: fourth;
+  padding-left: 5%;
+  margin: 3%;
+}
+
+#fifth-question {
+  grid-area: fifth;
+  padding-left: 5%;
+  margin: 3%;
+}
+
+.question {
+  color: hsl(237, 12%, 33%);
+}
+
+.arrow-icon {
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  margin-top: 10px;
+  opacity: 0.3;
 }
