@@ -76,8 +76,13 @@ body {
   color: hsl(237, 12%, 33%);
 }
 
-.arrow-icon {
+.arrow-icon-one,
+.arrow-icon-two,
+.arrow-icon-three,
+.arrow-icon-four,
+.arrow-icon-five {
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .hidden {
@@ -87,4 +92,17 @@ body {
 hr {
   margin-top: 10px;
   opacity: 0.3;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+#first-answer,
+#second-answer,
+#third-answer,
+#fourth-answer,
+#fifth-answer {
+  margin-top: 2%;
+  color: hsl(240, 6%, 50%);
 }
